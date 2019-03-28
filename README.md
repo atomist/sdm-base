@@ -1,7 +1,7 @@
 # atomist/sdm-base
 
-Base Docker image for creating Docker images for your Atomist Software
-Delivery Machine (SDM).
+A base Docker image for creating Docker images for your Atomist
+Software Delivery Machine (SDM).
 
 ## Using
 
