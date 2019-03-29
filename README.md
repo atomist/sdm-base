@@ -13,6 +13,8 @@ Add this line to the top of your Dockerfile
 
 ```dockerfile
 FROM atomist/sdm-base:M.N.P
+# install needed tools...
+USER atomist:atomist
 ```
 
 replacing `M.N.P` with the [latest release][release] of this image.
