@@ -1,5 +1,9 @@
 # atomist/sdm-base
 
+[![atomist sdm goals](https://badge.atomist.com/T29E48P34/atomist/sdm-base/3c8a769d-7100-4ea0-97f4-2db315544577)](https://app.atomist.com/workspace/T29E48P34)
+[![docker pulls](https://img.shields.io/docker/pulls/atomist/sdm-base.svg)](https://hub.docker.com/r/atomist/sdm-base)
+[![release](https://img.shields.io/github/release/atomist/sdm-base.svg)](https://github.com/atomist/sdm-base/releases/latest)
+
 A base Docker image for creating Docker images for your Atomist
 Software Delivery Machine (SDM).
 
