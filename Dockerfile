@@ -1,4 +1,4 @@
-FROM gcr.io/kaniko-project/executor:v0.9.0 AS kaniko
+# FROM gcr.io/kaniko-project/executor:v0.9.0 AS kaniko
 
 FROM ubuntu:18.04
 
@@ -46,7 +46,7 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=kaniko /kaniko /kaniko
+# COPY --from=kaniko /kaniko /kaniko
 
 # declare /sdm as volume so kaniko ignores it
-VOLUME ["/sdm"]
+# VOLUME ["/sdm"]
