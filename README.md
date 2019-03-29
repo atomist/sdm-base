@@ -14,6 +14,10 @@ Add this line to the top of your Dockerfile
 ```dockerfile
 FROM atomist/sdm-base:M.N.P
 # install needed tools...
+COPY package.json package-lock.json ./
+RUN npm ci \
+    && npm cache clean --force
+COPY . ./
 USER atomist:atomist
 ```
 
