@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
--   Update Node.js to 12.x [bc554c1](https://github.com/atomist/sdm-base/commit/bc554c1338121bb3d13867bca6000d40f159677e)
+-   Update Node.js to 12.x. [bc554c1](https://github.com/atomist/sdm-base/commit/bc554c1338121bb3d13867bca6000d40f159677e)
 
 ## [0.2.0](https://github.com/atomist/sdm-base/compare/0.1.0...0.2.0) - 2019-03-29
 
