@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
 
 ENV BLUEBIRD_WARNINGS 0
 ENV NODE_ENV production
-ENV NODE_OPTIONS --no-deprecation
 ENV NPM_CONFIG_LOGLEVEL warn
 ENV SUPPRESS_NO_CONFIG_WARNING true
 
@@ -26,7 +25,7 @@ WORKDIR /sdm
 
 EXPOSE 2866
 
-ENTRYPOINT ["dumb-init", "node", "--trace-warnings", "--expose_gc", "--optimize_for_size", "--always_compact", "--max_old_space_size=384"]
+ENTRYPOINT ["dumb-init", "node", "--no-deprecation", "--trace-warnings", "--expose_gc", "--optimize_for_size", "--always_compact", "--max_old_space_size=384"]
 
 CMD ["/sdm/node_modules/.bin/atm-start"]
 
