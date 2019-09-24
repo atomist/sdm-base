@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/atomist/sdm-base/compare/0.3.0...HEAD)
 
+### Changed
+
+-   Use specific release of ubuntu for base image. [f178747](https://github.com/atomist/sdm-base/commit/f178747c7a38e43fe01f92b0852f5a5d180a003a)
+
 ## [0.3.0](https://github.com/atomist/sdm-base/compare/0.2.1...0.3.0) - 2019-08-14
 
 ## [0.2.1](https://github.com/atomist/sdm-base/compare/0.2.0...0.2.1) - 2019-07-10
