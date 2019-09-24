@@ -1,6 +1,6 @@
 # FROM gcr.io/kaniko-project/executor:v0.9.0 AS kaniko
 
-FROM ubuntu:18.04
+FROM ubuntu:bionic-20190912.1
 
 LABEL maintainer="Atomist <docker@atomist.com>"
 
