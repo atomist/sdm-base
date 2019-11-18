@@ -1,6 +1,6 @@
-# FROM gcr.io/kaniko-project/executor:v0.9.0 AS kaniko
+# FROM gcr.io/kaniko-project/executor:v0.14.0 AS kaniko
 
-FROM ubuntu:bionic-20190912.1
+FROM ubuntu:bionic-20191029
 
 LABEL maintainer="Atomist <docker@atomist.com>"
 
@@ -46,7 +46,7 @@ RUN git config --global user.email "bot@atomist.com" \
 
 USER root:root
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+RUN curl -sL https://deb.nodesource.com/setup_13.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
