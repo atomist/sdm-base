@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 -   Use specific release of ubuntu for base image. [f178747](https://github.com/atomist/sdm-base/commit/f178747c7a38e43fe01f92b0852f5a5d180a003a)
+-   Update to ubuntu:bionic-20191029 and Node 13. [1596ac3](https://github.com/atomist/sdm-base/commit/1596ac357d74be19ec03e57b9186e2deedade19b)
 
 ### Removed
 
