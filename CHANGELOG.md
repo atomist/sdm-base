@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 
 -   Remove wget and unzip. [d29efd2](https://github.com/atomist/sdm-base/commit/d29efd2c0bbfc6206b1711a7ac363e51c754bb5c)
+-   Remove docker and kaniko comments. [74ef7a1](https://github.com/atomist/sdm-base/commit/74ef7a10462ae37ffc70b0baec7047dfa0d449c3)
 
 ## [0.3.0](https://github.com/atomist/sdm-base/compare/0.2.1...0.3.0) - 2019-08-14
 
