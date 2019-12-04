@@ -1,5 +1,3 @@
-# FROM gcr.io/kaniko-project/executor:v0.14.0 AS kaniko
-
 FROM ubuntu:bionic-20191029
 
 LABEL maintainer="Atomist <docker@atomist.com>"
@@ -16,9 +14,6 @@ ENV SUPPRESS_NO_CONFIG_WARNING true
 RUN groupadd --gid 2866 atomist \
     && useradd --home-dir /home/atomist --create-home --uid 2866 --gid 2866 --shell /bin/sh --skel /dev/null atomist
 
-RUN mkdir -p /opt
-
-# kaniko hijacks /opt
 RUN mkdir -p /sdm
 
 WORKDIR /sdm
@@ -33,7 +28,6 @@ RUN apt-get update && apt-get install -y \
         build-essential \
         curl \
         git \
-        docker.io \
     && rm -rf /var/lib/apt/lists/*
 
 RUN git config --global user.email "bot@atomist.com" \
@@ -49,8 +43,3 @@ USER root:root
 RUN curl -sL https://deb.nodesource.com/setup_13.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
-
-# COPY --from=kaniko /kaniko /kaniko
-
-# declare /sdm as volume so kaniko ignores it
-# VOLUME ["/sdm"]
