@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20191029
+FROM ubuntu:bionic-20200112
 
 LABEL maintainer="Atomist <docker@atomist.com>"
 
