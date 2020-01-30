@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
         build-essential \
         curl \
         git \
+        zip \
     && rm -rf /var/lib/apt/lists/*
 
 RUN git config --global user.email "bot@atomist.com" \
