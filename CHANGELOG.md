@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.4.1](https://github.com/atomist/sdm-base/compare/0.4.0...0.4.1) - 2020-01-30
 
+### Added
+
+-   Install zip binary. [fc97ac9](https://github.com/atomist/sdm-base/commit/fc97ac90f8758b978ad37a9d81355bd34ce1a662)
+
+### Changed
+
+-   Update ubuntu base image. [58aaf0b](https://github.com/atomist/sdm-base/commit/58aaf0b01d80575184844245235903ce0c805463)
+-   Increase max old space to 512 MiB. [b67470c](https://github.com/atomist/sdm-base/commit/b67470c1e2cafdc410a000ab4487ead6eb298843)
+
 ## [0.4.0](https://github.com/atomist/sdm-base/compare/0.3.0...0.4.0) - 2019-12-31
 
 ### Changed
